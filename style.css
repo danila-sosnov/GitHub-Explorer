@@ -92,7 +92,7 @@ img{
       color: #2c3a23;
 
   }
-  .view-button{
+  .search-button{
       font-size: 25px;
       color: #5c6861;
       background-color: transparent;
@@ -104,7 +104,7 @@ img{
       transition: background-color 0.3s ease, color 0.3s ease;   
   }
 
-  .view-button:hover {
+  .search-button:hover {
       background-color: #5190b4;
       border: none;
       color: black;
