@@ -109,3 +109,24 @@ img{
       border: none;
       color: black;
   }
+
+  .hidden{
+      display: none;
+  }
+
+  .profile-card{
+      text-align: center;
+  }
+
+  .profile-card img{
+      margin-top: 100px;
+      width: 400px;
+      border-radius: 50%;
+  }
+
+  .profile-card a{-----------------
+      color: #58a6ff;
+      text-decoration: none;
+  }
+
+  

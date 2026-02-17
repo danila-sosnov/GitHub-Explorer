@@ -5,7 +5,7 @@ btn.addEventListener('click',
 function()
 {
     const username = document.getElementById('input').value;
-
+console.log(username);
     if(username === "")
     {
         alert('Enter your username!');
