@@ -115,7 +115,19 @@ img{
   }
 
   .profile-card{
-      text-align: center;
+     text-align: center;
+      opacity: 0;
+      transform: scale(0.5) translateY(20px);
+      filter: blur(4px);
+      transition: all 0.7s ease;
+      margin-bottom: 100px;
+   
+  }
+
+  .profile-card.show{
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      filter: blur(0);
   }
 
   .profile-card img{
@@ -124,7 +136,7 @@ img{
       border-radius: 50%;
   }
 
-  .profile-card a{-----------------
+  .profile-card a{
       color: #58a6ff;
       text-decoration: none;
   }

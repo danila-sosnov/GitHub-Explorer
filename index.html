@@ -28,23 +28,20 @@
       <div class="container">
 
           <div class="input-group">
-                <input type="text" id="input" placeholder="Enter a GitHub username">
-                <button id="search-button" class="search-button">View</button>
+              <form action="profile.html" method="GET">
+                <input id="input" type="text" name="username" placeholder="Enter a GitHub username" required>
+                <button id="search-button" class="search-button" type="submit">View</button>
+              </form> 
+                
+               
           </div>
 
-          <div class="profile-card hidden" id="profile">
-              <img id="avatar">
-              <h2 id="name"></h2>
-              <p id="login"></p>
-              <p id="bio"></p>
+          
 
-              <span id="repos"></span>
-              <span id="followers"></span>
-              <span id="following"></span>
-
-              <a id="link" target="_blank"></a>
-
-          </div>
+          <form action="profile.html">
+              <input type="text" name="username" placeholder="Github ник" required>
+              <button type="submit">Найти</button>
+          </form>
 
       </div>
   </main>
