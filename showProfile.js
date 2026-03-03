@@ -1,21 +1,25 @@
 function showProfile(user)
 {
+    document.getElementById('profile').classList.remove('hidden');
 
-    const card = document.getElementById('profile');
-
-    card.classList.remove('hidden');
-    card.classList.remove('show');
-
-    setTimeout( function() {
-        card.classList.add('show');
-    }, 10);
-   
+    requestAnimationFrame(function() {
+        document.getElementById('profile').classList.add('show');
+    })
+    
     document.getElementById('avatar').src = user.avatar_url;
-    document.getElementById('name').textContent = user.name;
+    document.getElementById('name').textContent = user.name || 'No name';
     document.getElementById('login').textContent = '@' + user.login;
-    document.getElementById('bio').textContent = user.bio;
-    document.getElementById('repos').textContent = `Репозитории: ${user.public_repos}`;
-    document.getElementById('followers').textContent = `Подписчики: ${user.followers}`;
-    document.getElementById('following').textContent = `Подписки: ${user.following}`;
+
+    document.getElementById('followers').textContent = user.followers;
+    document.getElementById('following').textContent = user.following;
+    document.getElementById('repos').textContent = user.public_repos;
+
+    document.getElementById('location').textContent = user.location || 'Not specified';
+    document.getElementById('email').textContent = user.email || 'hidden';
+
+    const year = new Date(user.created_at).getFullYear();
+    document.getElementById('since').textContent = year;
+
+
     document.getElementById('link').href = user.html_url;
 }

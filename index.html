@@ -28,20 +28,56 @@
       <div class="container">
 
           <div class="input-group">
-              <form action="profile.html" method="GET">
-                <input id="input" type="text" name="username" placeholder="Enter a GitHub username" required>
-                <button id="search-button" class="search-button" type="submit">View</button>
-              </form> 
-                
-               
+                <input type="text" id="input" placeholder="Enter a GitHub username">
+                <button id="search-button" class="search-button">View</button>
           </div>
 
-          
+          <div class="profile-card hidden" id="profile">
+              <img id="avatar" class="avatar">
+              <h2 id="name"></h2>
+              <p id="login"></p>
+              
+              <div class="stats">
+                  <div class="stat">
+                      <span class="label">Followers</span>
+                    <span id="followers"></span>
 
-          <form action="profile.html">
-              <input type="text" name="username" placeholder="Github ник" required>
-              <button type="submit">Найти</button>
-          </form>
+                  </div>
+
+                  <div class="stat">
+                      <span class="label">Following</span>
+                      <span id="following"></span>
+                  </div>
+
+                  <div class="stat">
+                      <span class="label">Repos</span>
+                      <span id="repos"></span>
+                  </div>
+
+                  <div class="stat">
+                    <span class="label">Location</span>
+                    <span id="location"></span>
+                </div>
+
+                <div class="stat">
+                    <span class="label">Email</span>
+                    <span id="email"></span>
+                </div>
+
+                <div class="stat">
+                    <span class="label">Member since</span>
+                    <span id="since"></span>
+                </div>
+
+              </div>
+
+       
+            
+            
+
+              <a id="link" target="_blank"></a>
+
+          </div>
 
       </div>
   </main>
