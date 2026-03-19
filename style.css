@@ -24,14 +24,13 @@ body{
     background: #18201c;
 }
 
-p{
-    font-size: 90px;
+
+.header_info{
+    font-size: 70px;
     line-height: 120%;
     margin-bottom: 60px;
     color: #a2d4a5ea;
-   
 
-    
 }
 
 .header_container{
@@ -47,6 +46,8 @@ img{
     width: 300px;
     border-style: none;
   }
+
+
 
   .header_title{
       display: flex;
@@ -80,7 +81,6 @@ img{
     color: #c6d4c8;
     border-radius: 8px;
     padding: 10px;
-    outline: none;
     width: 400px;
     height: 40px;
     background-color: #46554d;
@@ -128,11 +128,13 @@ img{
   #name
   {
     color: #8b949e;
+    font-size: 50px;
     margin-bottom: 20px;
   }
 
   #login{
-      color: #8b949e;
+      color: #8b949eb4;
+      font-size: 20px;
       margin-bottom: 20px;
   }
 
@@ -207,6 +209,13 @@ img{
   .stat span:last-child{
       font-size: 18px;
       font-weight: bold;
+  }
+
+  .repos{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   

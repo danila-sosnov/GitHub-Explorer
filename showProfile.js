@@ -1,5 +1,16 @@
 function showProfile(user)
 {
+    console.log(user);
+
+    const reposBtn = document.getElementById('repos-btn');
+    reposBtn.style.cursor = 'pointer';
+
+    reposBtn.addEventListener('click',
+    function()
+    {
+        window.location.href = `repos.html?username=${user.login}`;
+    })
+
     document.getElementById('profile').classList.remove('hidden');
 
     requestAnimationFrame(function() {
