@@ -227,7 +227,7 @@ img{
     padding: 18px;
     border-radius: 16px;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
     opacity: 0;
     transform: translateX(20px);
@@ -251,7 +251,7 @@ img{
     text-decoration: none;
   }
 
-  .repo-name:hover{
+  .repo-a:hover{
     color: #79c0ff;
     text-decoration: underline;
   }
@@ -286,6 +286,33 @@ img{
     text-align: center;
     margin: 30px 0;
     font-size: 32px;
+    
   }
- 
+  
+  .gitname{
+    color: #546E42;
+  }
+
+  .goBack{
+    text-decoration: none;
+  }
+
+  .repo-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #8b949e;
+  }
+
+  .language{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .lang.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
   
